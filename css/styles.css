@@ -1,93 +1,3 @@
-/* цвет основного текста #757575; */
-/* title text #212121; */
-/* акцент #2196F3; */
-/* цвет адреса #FFFFFF; */
-/* background основной: #E5E5E5; */
-/* background work team and toolbar btn: #F5F4FA; */
-/* background футер и сервис: #2F303A; */
-/* цвет ссылок у футере rgba(255, 255, 255, 0.6); */
-
-:root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --primary-white-color: #ffffff;
-  --main-background-color: #e5e5e5;
-  --background-work-team: #f5f4fa;
-  --footer-service-background-color: #2f303a;
-  --color-icon-our-klient: #afb1b8;
-  --color-link-footer: rgba(255, 255, 255, 0.6);
-  --color-link-icon-footer: rgba(255, 255, 255, 0.1);
-  --time: 250ms;
-  --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  color: var(--primary-text-color);
-  font-size: 14px;
-  font-style: normal;
-
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-}
-
-.address {
-  font-style: normal;
-}
-
-.list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.link {
-  margin-top: 0;
-  margin-bottom: 0;
-  text-decoration: none;
-  font-style: normal;
-}
-
-.container {
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-}
-
 /*============WebStudio============*/
 
 /*======Header=======*/
@@ -99,13 +9,6 @@ img {
 
 .header {
   border-bottom: 1px solid #ececec;
-}
-
-.logo-link {
-  display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
 }
 
 .navigation-list {
@@ -166,32 +69,6 @@ img {
 
 /*NAV webstudio and portfolio */
 /*LOGO*/
-.logo-link,
-.logo-link-secondary,
-.logo-secondary-footer {
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  color: var(--accent-color);
-}
-
-.logo {
-  font-family: Raleway;
-  font-style: 700;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  color: var(--accent-color);
-}
-
-.logo-link-secondary {
-  color: var(--title-text-color);
-}
-
-.logo-secondary-footer {
-  color: var(--primary-white-color);
-}
 
 /*===========NAVigation list===========*/
 
@@ -316,36 +193,6 @@ img {
   color: var(--primary-white-color);
 }
 
-.service-btn {
-  display: inline-block;
-  padding: 10px 32px;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  background: var(--accent-color);
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  background: var(--accent-color);
-  color: var(--primary-white-color);
-  cursor: pointer;
-
-  transition: color var(--time) var(--animation-function),
-    background-color var(--time) var(--animation-function);
-}
-
-.service-btn:hover,
-.service-btn:focus {
-  background: var(--primary-white-color);
-  color: var(--accent-color);
-}
-
 /*=======Advantage container=======*/
 .advantage-box {
   padding-top: 94px;
@@ -406,10 +253,6 @@ img {
 /*=======WORK instrument=======*/
 .work-instrument {
   padding-bottom: 94px;
-}
-
-.work-title {
-  margin-bottom: 50px;
 }
 
 .work-instrument-lists {
@@ -477,10 +320,6 @@ img {
   padding-bottom: 94px;
 }
 
-.our-work-team {
-  margin-bottom: 50px;
-}
-
 .work-team-lists {
   display: flex;
 }
@@ -545,8 +384,7 @@ img {
   padding: 94px 0;
 }
 
-.our-klient-title {
-  margin-bottom: 50px;
+.title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.167;
@@ -656,11 +494,6 @@ img {
 }
 
 /*footer webstudio and portfolio*/
-
-.logo {
-  display: flex;
-  margin-bottom: 20px;
-}
 
 .contact-list:not(:last-child) {
   margin-bottom: 9px;
@@ -806,10 +639,6 @@ img {
 }
 
 /*=============portfolio===================*/
-.title-page {
-  display: none;
-  color: var(--primary-white-color);
-}
 
 /*=======potfolio-toolbar=======*/
 
@@ -1107,17 +936,6 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-}
-
-.input-checkbox {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
 }
 
 .label-checkbox {
