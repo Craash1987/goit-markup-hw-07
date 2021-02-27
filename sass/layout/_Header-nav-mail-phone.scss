@@ -74,7 +74,7 @@
 
 .navigation-list-link:hover,
 .navigation-list-link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .navigation-list-link,
@@ -84,23 +84,23 @@
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
-  transition: color var(--time) var(--animation-function),
-    background-color var(--time) var(--animation-function);
+  transition: color $time $animation-function,
+    background-color $time $animation-function;
 }
 
 .navigation-list-link {
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .current-link {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .contact-link-tel:hover,
 .contact-link-tel:focus,
 .contact-link-mail:hover,
 .contact-link-mail:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }

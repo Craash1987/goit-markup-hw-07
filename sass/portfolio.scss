@@ -10,16 +10,11 @@
 @import "./components/logo-header";
 @import "./components/logo-footer";
 @import "./components/title";
-@import "./components/service-btn";
 @import "./components/social-links-icon";
-@import "./components/curent-link-header";
+@import "./components/portfolio-btn";
 
 //LAYOUT
 @import "./layout/header-nav-mail-phone";
-@import "./layout/services";
-@import "./layout/advadtages";
-@import "./layout/work-instrunents";
-@import "./layout/about-work-team";
-@import "./layout/our-klient";
+@import "./layout/portfolio-projects";
+@import "./layout/portfolio-overlay";
 @import "./layout/footer";
-@import "./layout/modal-window";

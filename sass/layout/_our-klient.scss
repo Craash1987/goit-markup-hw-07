@@ -1,0 +1,48 @@
+.our-klient {
+  padding: 94px 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+
+.our-klient-list {
+  display: flex;
+}
+
+.our-klient-list-item {
+  width: 170px;
+  height: 90px;
+}
+
+.our-klient-list-link {
+  display: flex;
+  background-position: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $color-icon-our-klient;
+  border-radius: 4px;
+  color: $color-icon-our-klient;
+  border-color: $color-icon-our-klient;
+  fill: currentColor;
+
+  transition: fill $time $animation-function,
+    border-color $time $animation-function;
+}
+
+.our-klient-list-link:hover,
+.our-klient-list-link:focus {
+  fill: $accent-color;
+  border-color: $accent-color;
+}
+
+.our-klient-list-item:not(:last-child) {
+  margin-right: 30px;
+}
