@@ -1,3 +1,4 @@
+@import "./portfolio";
 //UITLS
 @import "./utils/variables";
 @import "./utils/visually-hidden";
@@ -12,3 +13,7 @@
 @import "./components/title";
 @import "./components/service-btn";
 @import "./components/social-links-icon";
+
+//LAYOUT
+
+@import "./layout/Header-nav-mail-phone";
