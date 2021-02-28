@@ -5,11 +5,6 @@
   cursor: pointer;
 }
 
-.social-list-item:not(:last-child),
-.social-list-item-footer:not(:last-child) {
-  margin-right: 10px;
-}
-
 .social-list-icon,
 .social-list-icon-footer {
   display: inline-flex;
@@ -23,6 +18,10 @@
 .social-list-item-footer {
   width: 44px;
   height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-list-link,

@@ -8,10 +8,6 @@
   display: flex;
 }
 
-.work-team-card:not(:last-child) {
-  margin-right: 30px;
-}
-
 .work-team-proffession {
   padding: 30px 32px;
 }
@@ -41,6 +37,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: $primary-white-color;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .work-team-title {

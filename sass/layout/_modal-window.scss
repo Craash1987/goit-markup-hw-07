@@ -89,6 +89,10 @@
   position: relative;
   padding-left: 42px;
   transition: border $time $animation-function;
+
+  &:focus ~ .form-icon {
+    fill: $accent-color;
+  }
 }
 
 .form-input,
@@ -109,10 +113,6 @@
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-}
-
-.form-input:focus ~ .form-icon {
-  fill: $accent-color;
 }
 
 .form-label,
@@ -139,14 +139,14 @@
   resize: none;
   padding: 12px 16px;
   transition: border $time $animation-function;
-}
 
-.comment-place::placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .form-checkbox {
@@ -162,22 +162,22 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-left: 35px;
-}
 
-.label-checkbox::after {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 13px;
-  content: "";
+  &::after {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    content: "";
 
-  width: 16px;
-  height: 15px;
-  border: 2px solid $title-text-color;
-  border-radius: 2px;
-  transition: all $time $animation-function;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+    transition: all $time $animation-function;
 
-  transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
 
 .input-checkbox:checked + .label-checkbox::after {

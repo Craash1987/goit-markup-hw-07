@@ -11,10 +11,9 @@
 
 .advantage-lists-list {
   width: 270px;
-}
-
-.advantage-lists-list:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantage-list-item {
