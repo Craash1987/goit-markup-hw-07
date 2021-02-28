@@ -42,9 +42,8 @@
   margin-top: 8px;
   margin-right: 8px;
 
-  display: flex;
+  @extend %flex-centered;
   justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -152,8 +151,7 @@
 
 .form-checkbox {
   position: relative;
-  display: flex;
-  align-items: center;
+  @extend %flex-centered;
   margin-bottom: 30px;
 }
 
