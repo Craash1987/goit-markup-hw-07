@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #757575;
   font-size: 14px;
   font-style: normal;
@@ -85,7 +85,7 @@ img {
 .logo-footer,
 .logo-header-secondary,
 .logo-footer-secondary {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: 700;
   font-weight: bold;
   font-size: 26px;
@@ -156,9 +156,9 @@ img {
   background-color: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover, .social-list-link:focus,
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -166,12 +166,6 @@ img {
 .social-list-link-footer {
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
-  fill: #ffffff;
-  background-color: #2196f3;
 }
 
 .potfolio-btns {
@@ -203,9 +197,7 @@ img {
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.potfolio-toolbar-btn:hover,
-.potfolio-toolbar-btn:focus {
+.potfolio-toolbar-btn:hover, .potfolio-toolbar-btn:focus {
   background: #2196f3;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -310,11 +302,6 @@ img {
   display: flex;
 }
 
-.navigation-list-link:hover,
-.navigation-list-link:focus {
-  color: #2196f3;
-}
-
 .navigation-list-link,
 .contact-link-tel,
 .contact-link-mail {
@@ -325,16 +312,16 @@ img {
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.navigation-list-link {
-  color: #212121;
-}
-
+.navigation-list-link:hover, .navigation-list-link:focus,
 .contact-link-tel:hover,
 .contact-link-tel:focus,
 .contact-link-mail:hover,
 .contact-link-mail:focus {
   color: #2196f3;
+}
+
+.navigation-list-link {
+  color: #212121;
 }
 
 .project-lists {
@@ -358,10 +345,12 @@ img {
   margin-bottom: 0;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.project-link:hover,
-.project-link:focus {
+.project-link:hover, .project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-link:hover .overlay, .project-link:focus .overlay {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .project-link-img {
@@ -417,12 +406,6 @@ img {
   color: #ffffff;
 }
 
-.project-link:hover .overlay,
-.project-link:focus .overlay {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 .contact-list:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -445,9 +428,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact-link-tel-footer:hover,
-.contact-link-tel-footer:focus,
+.contact-link-tel-footer:hover, .contact-link-tel-footer:focus,
 .contact-link-mail-footer:hover,
 .contact-link-mail-footer:focus {
   color: #2196f3;
@@ -534,7 +515,7 @@ img {
   border-radius: 4px;
   color: #ffffff;
   background-color: #2196f3;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;

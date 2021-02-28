@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #757575;
   font-size: 14px;
   font-style: normal;
@@ -86,7 +86,7 @@ img {
 .logo-footer,
 .logo-header-secondary,
 .logo-footer-secondary {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: 700;
   font-weight: bold;
   font-size: 26px;

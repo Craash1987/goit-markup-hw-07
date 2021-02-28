@@ -72,11 +72,6 @@
   display: flex;
 }
 
-.navigation-list-link:hover,
-.navigation-list-link:focus {
-  color: $accent-color;
-}
-
 .navigation-list-link,
 .contact-link-tel,
 .contact-link-mail {
@@ -88,15 +83,13 @@
 
   transition: color $time $animation-function,
     background-color $time $animation-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .navigation-list-link {
   color: $title-text-color;
-}
-
-.contact-link-tel:hover,
-.contact-link-tel:focus,
-.contact-link-mail:hover,
-.contact-link-mail:focus {
-  color: $accent-color;
 }

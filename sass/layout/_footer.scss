@@ -21,13 +21,10 @@
 
   transition: color $time $animation-function,
     background-color $time $animation-function;
-}
-
-.contact-link-tel-footer:hover,
-.contact-link-tel-footer:focus,
-.contact-link-mail-footer:hover,
-.contact-link-mail-footer:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .text-address {
@@ -116,7 +113,7 @@
   border-radius: 4px;
   color: $primary-white-color;
   background-color: $accent-color;
-  font-family: Roboto;
+  font-family: $mainFont;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;

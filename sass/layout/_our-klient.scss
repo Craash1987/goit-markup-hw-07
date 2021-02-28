@@ -18,6 +18,10 @@
 .our-klient-list-item {
   width: 170px;
   height: 90px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .our-klient-list-link {
@@ -35,14 +39,10 @@
 
   transition: fill $time $animation-function,
     border-color $time $animation-function;
-}
 
-.our-klient-list-link:hover,
-.our-klient-list-link:focus {
-  fill: $accent-color;
-  border-color: $accent-color;
-}
-
-.our-klient-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
 }

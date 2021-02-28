@@ -40,21 +40,15 @@
 
   transition: fill $time $animation-function, color $time $animation-function,
     background-color $time $animation-function;
-}
 
-.social-list-link:hover,
-.social-list-link:focus {
-  fill: $primary-white-color;
-  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background-color: $accent-color;
+  }
 }
 
 .social-list-link-footer {
   fill: $primary-white-color;
   background-color: $color-link-icon-footer;
-}
-
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
-  fill: $primary-white-color;
-  background-color: $accent-color;
 }

@@ -20,10 +20,10 @@
 
   transition: color $time $animation-function,
     background-color $time $animation-function;
-}
 
-.service-btn:hover,
-.service-btn:focus {
-  background: $primary-white-color;
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    background: $primary-white-color;
+    color: $accent-color;
+  }
 }

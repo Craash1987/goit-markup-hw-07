@@ -9,10 +9,9 @@
 .work-instrument-list {
   width: 370px;
   height: 294px;
-}
-
-.work-instrument-list:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .work-instrument-img {

@@ -53,11 +53,11 @@
 
   transition: fill $time $animation-function;
   background-color: $primary-white-color;
-}
 
-.modal-close:hover,
-.modal-close:focus {
-  fill: $accent-color;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 /*=====Contact-form=====*/
@@ -98,12 +98,11 @@
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
 
-.form-input:focus,
-.comment-place:focus {
-  outline: none;
-  border: 1px solid $accent-color;
+  &:focus {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
 }
 
 .form-icon {
@@ -225,10 +224,10 @@
   border: 0;
 
   transition: box-shadow $time $animation-function;
-}
 
-.contact-form-btn:hover,
-.contact-form-btn:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
