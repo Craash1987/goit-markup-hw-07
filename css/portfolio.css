@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: Roboto, sans-serif;
-  color: var(--primary-text-color);
+  color: #757575;
   font-size: 14px;
   font-style: normal;
   max-width: 1600px;
